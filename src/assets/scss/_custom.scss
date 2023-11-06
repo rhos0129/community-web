@@ -1,0 +1,25 @@
+$bluegray100: #CFD8DC;
+$bluegray200: #B0BEC5;
+$bluegray300: #90A4AE;
+$bluegray400: #78909C;
+$bluegray500: #607D8B;
+$bluegray600: #546E7A;
+$bluegray700: #455A65;
+$bluegray800: #37474F;
+$bluegray900: #263238;
+
+
+$theme-colors: (
+    bluegray100: $bluegray100,
+    bluegray200: $bluegray200,
+    bluegray300: $bluegray300,
+    bluegray400: $bluegray400,
+    bluegray500: $bluegray500,
+    bluegray600: $bluegray600,
+    bluegray700: $bluegray700,
+    bluegray800: $bluegray800,
+    bluegray900: $bluegray900,
+
+);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
