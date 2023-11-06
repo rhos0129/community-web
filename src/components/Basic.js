@@ -6,8 +6,8 @@ const Basic = (props) => {
   return (
     <>
       <Header />
-      <main>
-        {props.children}
+      <main id='main' role='main'>
+        <p>{props.children}</p>
       </main>
       <Footer />
     </>

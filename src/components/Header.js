@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
+    return (
+        <header id='header' role='banner'>
+                        
+        </header>
+    )
 }
 
 export default Header
