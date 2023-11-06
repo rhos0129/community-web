@@ -1,8 +1,11 @@
 import React from 'react'
+import Basic from '../components/Basic'
 
 const ArticleEdit = () => {
   return (
-    <div>ArticleEdit</div>
+    <Basic>
+      ArticleEdit
+    </Basic>
   )
 }
 

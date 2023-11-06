@@ -1,8 +1,11 @@
 import React from 'react'
+import Basic from '../components/Basic'
 
 const ArticleList = () => {
   return (
-    <div>ArticleList</div>
+    <Basic>
+      ArticleList
+    </Basic>
   )
 }
 

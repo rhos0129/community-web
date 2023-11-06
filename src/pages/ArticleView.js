@@ -1,8 +1,11 @@
 import React from 'react'
+import Basic from '../components/Basic'
 
 const ArticleView = () => {
   return (
-    <div>ArticleView</div>
+    <Basic>
+      ArticleView
+    </Basic>
   )
 }
 
