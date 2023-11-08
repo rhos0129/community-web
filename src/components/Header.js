@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Form, InputGroup, Stack, Nav, Row, Button } from 'react-bootstrap'
 import { BsSearch } from "react-icons/bs";
-import { GoCodeReview } from "react-icons/go";
+import Logo from './layout/Logo';
 
 const Header = () => {
     return (
@@ -9,12 +9,7 @@ const Header = () => {
             <Container fluid="xl">
                 <Row className='d-flex align-items-center'>
                     <Col className='d-flex justify-content-start'>
-                        <h1 className='h3 mt-2 mb-1 mx-2 d-flex align-items-center'>
-                            <a href='/' className='link-bluegray800 link-underline-opacity-0' >
-                                <GoCodeReview className='mx-1' style={{ width: '40px', height: '40px' }} />
-                                <span className='fw-bold text-uppercase'>com</span>
-                            </a>
-                        </h1>
+                        <Logo />
                     </Col>
                     <Col className='col-7 d-flex justify-content-between'>
                         <Nav>
@@ -26,7 +21,7 @@ const Header = () => {
                             <InputGroup.Text className='border-0 bg-white'>
                                 <BsSearch />
                             </InputGroup.Text>
-                            <Form.Control className='border-0 shadow-none' placeholder="검색"/>
+                            <Form.Control className='border-0 shadow-none' placeholder="검색" />
                         </InputGroup>
                     </Col>
                     <Col className='d-flex justify-content-end text-wrap'>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Nav, Row } from 'react-bootstrap'
-import { GoCodeReview } from "react-icons/go";
 import { BsGithub } from "react-icons/bs";
 import { SiNotion } from "react-icons/si";
+import Logo from './layout/Logo';
 
 const Footer = () => {
     return (
@@ -10,12 +10,7 @@ const Footer = () => {
             <Container fluid="xl">
                 <Row className='d-flex align-items-center h-100'>
                     <Col className='d-flex justify-content-start'>
-                        <h1 className='h3 mt-2 mb-1 mx-2 d-flex align-items-center'>
-                            <a href='/' className='link-bluegray800 link-underline-opacity-0' >
-                                <GoCodeReview className='mx-1' style={{ width: '40px', height: '40px' }} />
-                                <span className='fw-bold text-uppercase'>com</span>
-                            </a>
-                        </h1>
+                        <Logo />
                     </Col>
                     <Col className='col-7 d-flex flex-column align-items-center'>
                         <Nav>
@@ -58,7 +53,6 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-
         </footer>
     )
 }
