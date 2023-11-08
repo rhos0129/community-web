@@ -1,19 +1,32 @@
 import React from 'react'
-import { Col, Container, Form, InputGroup, Stack, Nav, Row, Button } from 'react-bootstrap'
+import { Form, InputGroup, Stack, Button } from 'react-bootstrap'
 import { BsSearch } from "react-icons/bs";
 import Logo from './layout/Logo';
 import GridContainer from 'components/layout/GridContainer';
+import SimpleNav from './layout/SimpleNav';
 
 const Header = () => {
+
+    const navItems = [
+        {
+            title: "QnA",
+            href: "/qna",
+        },
+        {
+            title: "스터디",
+            href: "/study",
+        },
+        {
+            title: "일상",
+            href: "/life",
+        },
+    ]
+
     return (
         <header id='header' role='banner' className='sticky-top h-100 bg-white border-bottom border-2 mb-3' >
             <GridContainer>
                 <Logo />
-                <Nav>
-                    <Nav.Link href='' className='link-bluegray800 link-underline-opacity-0 link-opacity-50-hover'>QnA</Nav.Link>
-                    <Nav.Link href='' className='link-bluegray800 link-underline-opacity-0 link-opacity-50-hover'>스터디</Nav.Link>
-                    <Nav.Link href='' className='link-bluegray800 link-underline-opacity-0 link-opacity-50-hover'>일상</Nav.Link>
-                </Nav>
+                <SimpleNav items={navItems}/>
                 <InputGroup className='border h-50' style={{ width: '40%', height: '38px' }}>
                     <InputGroup.Text className='border-0 bg-white'>
                         <BsSearch />

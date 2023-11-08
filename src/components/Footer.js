@@ -4,20 +4,26 @@ import { BsGithub } from "react-icons/bs";
 import { SiNotion } from "react-icons/si";
 import Logo from './layout/Logo';
 import GridContainer from './layout/GridContainer';
+import SimpleNav from './layout/SimpleNav';
 
 const Footer = () => {
+
+    const navItems = [
+        {
+            title: "공지사항",
+            href: "/notice",
+        },
+        {
+            title: "버그제보",
+            href: "/report",
+        },
+    ]
+
     return (
         <footer id='footer' role='contentinfo' className='bg-white border-top border-2 mt-3 mb-2'>
             <GridContainer column>
                 <Logo />
-                <Nav>
-                    <Nav.Link href='' className='link-bluegray800 link-underline-opacity-0 link-opacity-50-hover' >
-                        공지사항
-                    </Nav.Link>
-                    <Nav.Link href='' className='link-bluegray800 link-underline-opacity-0 link-opacity-50-hover'>
-                        버그제보
-                    </Nav.Link>
-                </Nav>
+                <SimpleNav items={navItems}/>
                 <div className='' style={{ fontSize: '12px' }}>
                     <p className='my-0'>공부 목적으로 만들어보는 간단한 개발자 커뮤니티</p>
                     <p className='my-0'>기술스택 : react, bootstrap, spring, jpa </p>
