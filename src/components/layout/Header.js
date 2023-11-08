@@ -10,15 +10,15 @@ const Header = () => {
     const navItems = [
         {
             title: "QnA",
-            href: "/qna",
+            href: "/articles/qna",
         },
         {
             title: "스터디",
-            href: "/study",
+            href: "/articles/study",
         },
         {
             title: "일상",
-            href: "/life",
+            href: "/articles/life",
         },
     ]
 
