@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Form, InputGroup, Stack, Nav, Row, Button } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 
 
 const SimpleNav = (props) => {

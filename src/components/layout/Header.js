@@ -1,9 +1,9 @@
 import React from 'react'
 import { Form, InputGroup, Stack, Button } from 'react-bootstrap'
 import { BsSearch } from "react-icons/bs";
-import Logo from './layout/Logo';
+import Logo from 'components/layout/Logo';
 import GridContainer from 'components/layout/GridContainer';
-import SimpleNav from './layout/SimpleNav';
+import SimpleNav from 'components/layout/SimpleNav';
 
 const Header = () => {
 

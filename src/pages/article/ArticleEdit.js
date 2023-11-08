@@ -1,11 +1,11 @@
 import React from 'react'
-import Basic from '../components/Basic'
+import Layout from 'components/layout/Layout'
 
 const ArticleEdit = () => {
   return (
-    <Basic>
+    <Layout>
       ArticleEdit
-    </Basic>
+    </Layout>
   )
 }
 

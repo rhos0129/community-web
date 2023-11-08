@@ -1,10 +1,9 @@
 import React from 'react'
-import { Col, Container, Nav, Row } from 'react-bootstrap'
 import { BsGithub } from "react-icons/bs";
 import { SiNotion } from "react-icons/si";
-import Logo from './layout/Logo';
-import GridContainer from './layout/GridContainer';
-import SimpleNav from './layout/SimpleNav';
+import Logo from './Logo';
+import GridContainer from './GridContainer';
+import SimpleNav from './SimpleNav';
 
 const Footer = () => {
 
