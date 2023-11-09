@@ -23,11 +23,26 @@ $theme-colors: (
 
 );
 
-// Pagination ==========
+// Nav
+.nav-link.active {
+    color: $bluepoint !important;
+}
 
+.nav-link {
+    color: $bluegray800 !important;
+
+    &:hover,
+    &:focus {
+        color: $bluepoint !important;
+    }
+}
+
+
+
+// Pagination ==========
 .page-item.disabled {
     .page-link {
-            color: $bluegray200 !important;
+        color: $bluegray200 !important;
     }
 }
 
@@ -53,15 +68,15 @@ $theme-colors: (
 }
 
 // Dropdown ==========
-.dropdown-toggle{
+.dropdown-toggle {
     border: 1px solid $bluegray900 !important;
 
-    &::after{
+    &::after {
         content: none !important;
     }
 }
 
-.dropdown-item.active{
+.dropdown-item.active {
     background: $bluegray300 !important;
 }
 
