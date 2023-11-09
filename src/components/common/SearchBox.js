@@ -8,7 +8,7 @@ const SearchBox = (props) => {
             <InputGroup.Text className='border-0 rounded-5 bg-white'>
                 <BsSearch />
             </InputGroup.Text>
-            <Form.Control className='border-0 rounded-5 shadow-none' placeholder={props.placeholder} style={{ fontSize: '0.8rem' }} />
+            <Form.Control className='border-0 rounded-5 shadow-none' placeholder={props.placeholder} style={{ fontSize: '0.875rem' }} />
         </InputGroup>
     )
 }

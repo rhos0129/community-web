@@ -29,8 +29,8 @@ const Header = () => {
                 <SimpleNav items={navItems}/>
                 <SearchBox placeholder='검색' width='40%'/>
                 <Stack gap={2} direction="horizontal">
-                    <Button className="border-bluegray900 bg-white text-black" href='/login' style={{ fontSize: '0.8rem' }}>로그인</Button>
-                    <Button className="text-bg-bluegray900 border-bluegray900" href='/signup' style={{ fontSize: '0.8rem' }}>회원가입</Button>
+                    <Button className="rounded-5 border-bluegray900 bg-white text-black" href='/login' style={{ fontSize: '0.875rem' }}>로그인</Button>
+                    <Button className="rounded-5 text-bg-bluegray900 border-bluegray900" href='/signup' style={{ fontSize: '0.875rem' }}>회원가입</Button>
                 </Stack>
             </GridContainer>
         </header>
