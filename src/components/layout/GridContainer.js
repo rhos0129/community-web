@@ -10,7 +10,7 @@ const GridContainer = (props) => {
                 <Col className='d-flex justify-content-start'>
                     {props.children.slice(0, 1)}
                 </Col>
-                <Col className={"col-7 d-flex " + (props.column ? "flex-column align-items-center" : "justify-content-between")}>
+                <Col className={"col-7 d-flex " + (props.row ? "justify-content-between" : "flex-column align-items-center" )}>
                     {props.children.slice(1, -1)}
 
                 </Col>

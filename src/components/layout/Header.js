@@ -24,13 +24,13 @@ const Header = () => {
 
     return (
         <header id='header' role='banner' className='sticky-top h-100 bg-white border-bottom border-2 mb-3' >
-            <GridContainer>
+            <GridContainer row>
                 <Logo />
                 <SimpleNav items={navItems}/>
-                <SearchBox placeholder='검색'/>
+                <SearchBox placeholder='검색' width='40%'/>
                 <Stack gap={2} direction="horizontal">
-                    <Button className="border-bluegray900 bg-white text-black" href='/login'>로그인</Button>
-                    <Button className="text-bg-bluegray900 border-bluegray900" href='/signup'>회원가입</Button>
+                    <Button className="border-bluegray900 bg-white text-black" href='/login' style={{ fontSize: '0.8rem' }}>로그인</Button>
+                    <Button className="text-bg-bluegray900 border-bluegray900" href='/signup' style={{ fontSize: '0.8rem' }}>회원가입</Button>
                 </Stack>
             </GridContainer>
         </header>
