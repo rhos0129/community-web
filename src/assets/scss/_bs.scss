@@ -7,7 +7,7 @@ $bluegray600: #546E7A;
 $bluegray700: #455A65;
 $bluegray800: #37474F;
 $bluegray900: #263238;
-
+$bluepoint: #00b3ff;
 
 $theme-colors: (
     bluegray100: $bluegray100,
@@ -19,7 +19,50 @@ $theme-colors: (
     bluegray700: $bluegray700,
     bluegray800: $bluegray800,
     bluegray900: $bluegray900,
+    bluepoint: $bluepoint,
 
 );
+
+// Pagination ==========
+
+.page-item.disabled {
+    .page-link {
+            color: $bluegray200 !important;
+    }
+}
+
+.page-item.active {
+    .page-link {
+        border-radius: 0% !important;
+        border-top: 2px solid $bluepoint !important;
+        color: $bluepoint !important;
+    }
+}
+
+.page-link {
+    font-size: 0.875rem !important;
+    background: white !important;
+    color: $bluegray900 !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    &:hover {
+        color: $bluepoint !important;
+    }
+
+}
+
+// Dropdown ==========
+.dropdown-toggle{
+    border: 1px solid $bluegray900 !important;
+
+    &::after{
+        content: none !important;
+    }
+}
+
+.dropdown-item.active{
+    background: $bluegray300 !important;
+}
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
