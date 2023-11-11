@@ -9,35 +9,6 @@ $bluegray800: #37474F;
 $bluegray900: #263238;
 $bluepoint: #00b3ff;
 
-$theme-colors: (
-    bluegray100: $bluegray100,
-    bluegray200: $bluegray200,
-    bluegray300: $bluegray300,
-    bluegray400: $bluegray400,
-    bluegray500: $bluegray500,
-    bluegray600: $bluegray600,
-    bluegray700: $bluegray700,
-    bluegray800: $bluegray800,
-    bluegray900: $bluegray900,
-    bluepoint: $bluepoint,
-
-);
-
-// Nav
-.nav-link.active {
-    color: $bluepoint !important;
-}
-
-.nav-link {
-    color: $bluegray800 !important;
-
-    &:hover,
-    &:focus {
-        color: $bluepoint !important;
-    }
-}
-
-
 
 // Pagination ==========
 .page-item.disabled {
@@ -67,6 +38,7 @@ $theme-colors: (
 
 }
 
+
 // Dropdown ==========
 .dropdown-toggle {
     border: 1px solid $bluegray900 !important;
@@ -79,5 +51,6 @@ $theme-colors: (
 .dropdown-item.active {
     background: $bluegray300 !important;
 }
+
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';

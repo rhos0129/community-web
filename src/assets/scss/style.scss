@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
-@import "bs";
+@import "setting/vars";
+@import "setting/reset";
+@import "setting/common";
+
+@import "components/nav";

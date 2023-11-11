@@ -1,0 +1,32 @@
+$bluegrays : (bluegray-100: var(--bluegray100),
+  bluegray-200: var(--bluegray200),
+  bluegray-300: var(--bluegray300),
+  bluegray-400: var(--bluegray400),
+  bluegray-500: var(--bluegray500),
+  bluegray-600: var(--bluegray600),
+  bluegray-700: var(--bluegray700),
+  bluegray-800: var(--bluegray800),
+  bluegray-900: var(--bluegray900),
+  blue: var(--blue),
+);
+
+@each $name, $value in $bluegrays {
+
+  .bg-#{''+$name} {
+    background-color: $value
+  }
+
+  .link-#{''+$name},
+  .text-#{''+$name} {
+    color: $value
+  }
+
+  .border-#{''+$name} {
+    border-color: $value
+  }
+
+}
+
+.fs-sm {
+  font-size: 0.875rem;
+}
