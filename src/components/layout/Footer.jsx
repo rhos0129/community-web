@@ -49,11 +49,11 @@ const Footer = () => {
 
   return (
     <footer id='footer' role='contentinfo'
-      className='bg-white border-top border-2 mt-3 mb-2'>
+      className='bg-white border-top border-2 mb-4 pt-3'>
       <GridContainer>
         <Logo />
         <SimpleNav items={navItems} />
-        <div className='fs-sm'>
+        <div className='fs-sm mt-3'>
           <p className='my-0'>공부 목적으로 만들어보는 간단한 개발자 커뮤니티</p>
           <p className='my-0'>기술스택 : react, bootstrap, spring, jpa </p>
           <p className='my-0'>© 2023 (주)Com, Inc. All rights reserved.</p>
