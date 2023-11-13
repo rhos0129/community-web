@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 
-const GridContainer = ({ children, row }) => {
+const DefaultContainer = ({ children, row }) => {
   return (
     <Container fluid className='d-flex align-items-center'>
       <Col className='d-flex justify-content-start'>
@@ -17,4 +17,4 @@ const GridContainer = ({ children, row }) => {
   )
 }
 
-export default GridContainer
+export default DefaultContainer

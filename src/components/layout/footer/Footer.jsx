@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
 import { SiNotion } from "react-icons/si";
-import Logo from './Logo';
-import GridContainer from './GridContainer';
-import SimpleNav from '../common/SimpleNav';
+import Logo from '../../common/Logo';
+import DefaultContainer from '../DefaultContainer';
+import SimpleNav from '../../common/SimpleNav';
 import Sns from './Sns';
 import { Stack } from 'react-bootstrap';
 
@@ -50,7 +50,7 @@ const Footer = () => {
   return (
     <footer id='footer' role='contentinfo'
       className='bg-white border-top border-2 mt-5 py-3'>
-      <GridContainer>
+      <DefaultContainer>
         <Logo />
         <SimpleNav items={navItems} />
         <div className='fs-sm mt-3'>
@@ -62,7 +62,7 @@ const Footer = () => {
           <Sns group='fe' items={snsItems.fe} />
           <Sns group='be' items={snsItems.be} />
         </Stack>
-      </GridContainer>
+      </DefaultContainer>
     </footer>
   )
 }

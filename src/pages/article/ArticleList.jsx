@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "components/layout/Layout";
+import BasicLayout from "components/layout/BasicLayout";
 import { useParams } from "react-router";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import PageTitle from "components/article/PageTitle";
@@ -101,7 +101,7 @@ const ArticleList = () => {
   ];
 
   return (
-    <Layout>
+    <BasicLayout>
       <PageTitle
         className="bg-bluegray-600 text-white rounded-3 py-3 px-5"
         title={pageTitle.title}
@@ -112,7 +112,7 @@ const ArticleList = () => {
       <Paging top />
       <List items={articleListItems} />
       <Paging />
-    </Layout>
+    </BasicLayout>
   );
 };
 

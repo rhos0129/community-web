@@ -1,5 +1,5 @@
 import React from 'react'
-import GridContainer from 'components/layout/GridContainer'
+import DefaultContainer from 'components/layout/DefaultContainer'
 import PageTitle from 'components/auth/PageTitle'
 import SimpleForm from 'components/auth/SimpleForm'
 import SubLink from 'components/auth/SubLink'
@@ -18,14 +18,14 @@ const Login = () => {
   ]
 
   return (
-    <GridContainer>
+    <DefaultContainer>
       <div></div>
       <PageTitle />
       <SimpleForm items={formItems} buttonText='로그인' />
       <SubLink text='아직 회원이 아니신가요?'
         to='회원가입' href='/signup' />
       <div></div>
-    </GridContainer>
+    </DefaultContainer>
   )
 }
 

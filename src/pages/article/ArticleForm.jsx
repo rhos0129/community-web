@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "components/layout/Layout";
+import BasicLayout from "components/layout/BasicLayout";
 import SimpleForm from "components/article/SimpleForm";
 import PageTitle from "components/article/PageTitle";
 
@@ -10,13 +10,13 @@ const ArticleForm = () => {
   };
 
   return (
-    <Layout>
+    <BasicLayout>
       <PageTitle
         title={pageTitle.title}
         desc={pageTitle.desc}
       />
       <SimpleForm />
-    </Layout>
+    </BasicLayout>
   );
 };
 

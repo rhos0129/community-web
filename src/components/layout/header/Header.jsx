@@ -1,8 +1,8 @@
 import React from 'react'
 import { Stack, Button } from 'react-bootstrap'
-import Logo from 'components/layout/Logo';
-import GridContainer from 'components/layout/GridContainer';
-import SimpleNav from 'components/common/SimpleNav';
+import Logo from 'components/common/Logo';
+import DefaultContainer from 'components/layout/DefaultContainer';
+import SimpleNav from 'components/layout/header/SimpleNav';
 import SearchBox from 'components/common/SearchBox';
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header id='header' role='banner'
       className='sticky-top h-100 bg-white border-bottom border-2 mb-3'>
-      <GridContainer row>
+      <DefaultContainer row>
         <Logo />
         <SimpleNav items={navItems} />
         <SearchBox placeholder='전체 검색' width='40%' />
@@ -39,7 +39,7 @@ const Header = () => {
             회원가입
           </Button>
         </Stack>
-      </GridContainer>
+      </DefaultContainer>
     </header>
   )
 }

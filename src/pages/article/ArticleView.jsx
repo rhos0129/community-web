@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from 'components/layout/Layout'
+import BasicLayout from 'components/layout/BasicLayout'
 
 const ArticleView = () => {
   return (
-    <Layout>
+    <BasicLayout>
       ArticleView
-    </Layout>
+    </BasicLayout>
   )
 }
 

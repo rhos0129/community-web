@@ -1,4 +1,4 @@
-import Logo from 'components/layout/Logo'
+import Logo from 'components/common/Logo'
 import React from 'react'
 import { Stack } from 'react-bootstrap'
 
