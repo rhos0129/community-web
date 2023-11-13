@@ -10,8 +10,8 @@ import CategoryBanner from "components/article/CategoryBanner";
 const ArticleSearch = () => {
   const params = useParams();
 
-  const pageTitle = {
-    title: params.title,
+  const categoryBanner = {
+    category: params.category,
     desc: "간단한 설명입니다.",
     icon: <BsQuestionCircleFill size="3rem" />,
   };
@@ -103,9 +103,9 @@ const ArticleSearch = () => {
   return (
     <BasicLayout>
       <CategoryBanner
-        title={pageTitle.title}
-        desc={pageTitle.desc}
-        icon={pageTitle.icon}
+        category={categoryBanner.category}
+        desc={categoryBanner.desc}
+        icon={categoryBanner.icon}
       />
       <ArticleNav />
       <CustomPagination top />

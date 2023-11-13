@@ -1,6 +1,6 @@
 import React from "react";
 
-const CategoryBanner = ({ title, desc, icon, className }) => {
+const CategoryBanner = ({ category, desc, icon }) => {
   return (
     <div
       className={
@@ -8,7 +8,7 @@ const CategoryBanner = ({ title, desc, icon, className }) => {
       }
     >
       <div>
-        <h2 className="mb-1">{title}</h2>
+        <h2 className="mb-1">{category}</h2>
         <p className="mb-1">{desc}</p>
       </div>
       {icon}
