@@ -18,7 +18,7 @@ const PageTitle = ({title, desc, icon, className}) => {
 
 PageTitle.defaultProps = {
   title: '카테고리명',
-  desc : '해당 카테고리의 간단한 설명',
+  desc : null,
   icon : null
 }
 
