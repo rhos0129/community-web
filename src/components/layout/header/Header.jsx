@@ -3,7 +3,7 @@ import Logo from "components/common/Logo";
 import DefaultContainer from "components/layout/DefaultContainer";
 import SimpleNav from "components/layout/header/SimpleNav";
 import SearchBox from "components/common/SearchBox";
-import ButtonGroup from "components/common/ButtonGroup";
+import ButtonGroup from "components/layout/header/ButtonGroup";
 
 const Header = () => {
   const navItems = [
