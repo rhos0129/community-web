@@ -1,5 +1,5 @@
-import PageTitle from 'components/auth/PageTitle'
-import SimpleForm from 'components/auth/SimpleForm'
+import AuthPageTitle from 'components/auth/AuthPageTitle'
+import AuthForm from 'components/auth/AuthForm'
 import SubLink from 'components/auth/SubLink'
 import DefaultContainer from 'components/layout/DefaultContainer'
 import React from 'react'
@@ -32,8 +32,8 @@ const SignUp = () => {
   return (
     <DefaultContainer>
       <div></div>
-      <PageTitle />
-      <SimpleForm items={formItems} buttonText='회원가입' />
+      <AuthPageTitle />
+      <AuthForm items={formItems} buttonText='회원가입' />
       <SubLink text='이미 회원이신가요?'
         to='로그인' href='/login' />
       <div></div>

@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "pages/Home";
 import SignUp from "pages/auth/SignUp";
 import Login from "pages/auth/Login";
-import Profile from "pages/auth/Profile";
+import Profile from "pages/mypage/Profile";
 import ArticleList from "pages/article/ArticleList";
 import ArticleView from "pages/article/ArticleView";
 import ArticleForm from "pages/article/ArticleForm";
