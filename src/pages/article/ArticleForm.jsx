@@ -1,27 +1,21 @@
 import React from "react";
 import Layout from "components/layout/Layout";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
+import SimpleForm from "components/article/SimpleForm";
+import PageTitle from "components/article/PageTitle";
 
 const ArticleForm = () => {
-  const modules = {
-    toolbar: [
-      [{ header: 1 }, { header: 2 }],
-      ["bold", "italic", "underline", "strike"],
-      [{ list: "ordered" }, { list: "bullet" }],
-      ["blockquote", "code", "code-block", "link", "image", "divider"],
-    ],
+  const pageTitle = {
+    title: '함께 할 때 더 즐거운 순간',
+    desc: "어떤개발자님 지식공유 플랫폼 OKKY에서 다양한 사람을 만나고 생각의 폭을 넓혀보세요.",
   };
 
   return (
     <Layout>
-      <ReactQuill
-        className="w-100 my-5"
-        theme="snow"
-        modules={modules}
-        placeholder="react-quill test"
-        style={{height: '50vh'}}
+      <PageTitle
+        title={pageTitle.title}
+        desc={pageTitle.desc}
       />
+      <SimpleForm />
     </Layout>
   );
 };
