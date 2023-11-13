@@ -2,12 +2,12 @@ import React from "react";
 import BasicLayout from "components/layout/BasicLayout";
 import { useParams } from "react-router";
 import { BsQuestionCircleFill } from "react-icons/bs";
-import PageTitle from "components/article/PageTitle";
-import List from "components/article/List";
-import Paging from "components/article/Paging";
-import Buttons from "components/article/Buttons";
+import ArticleList from "components/article/ArticleList";
+import CustomPagination from "components/article/CustomPagination";
+import ArticleNav from "components/article/ArticleNav";
+import CategoryBanner from "components/article/CategoryBanner";
 
-const ArticleList = () => {
+const ArticleSearch = () => {
   const params = useParams();
 
   const pageTitle = {
@@ -102,18 +102,17 @@ const ArticleList = () => {
 
   return (
     <BasicLayout>
-      <PageTitle
-        className="bg-bluegray-600 text-white rounded-3 py-3 px-5"
+      <CategoryBanner
         title={pageTitle.title}
         desc={pageTitle.desc}
         icon={pageTitle.icon}
       />
-      <Buttons />
-      <Paging top />
-      <List items={articleListItems} />
-      <Paging />
+      <ArticleNav />
+      <CustomPagination top />
+      <ArticleList items={articleListItems} />
+      <CustomPagination />
     </BasicLayout>
   );
 };
 
-export default ArticleList;
+export default ArticleSearch;

@@ -3,7 +3,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Button, Form, Stack } from "react-bootstrap";
 
-const SimpleForm = ({title, content}) => {
+const ArticleForm = ({ title, content }) => {
   const modules = {
     toolbar: [
       [{ header: 1 }, { header: 2 }],
@@ -30,10 +30,10 @@ const SimpleForm = ({title, content}) => {
         />
       </Form.Group>
       <Stack direction="horizontal" className="" gap={1}>
-        <Button className="bg-white text-bluegray-800 border-bluegray-800 ms-auto px-3">
+        <Button className="bg-white text-bluegray-800 border-bluegray-800 ms-auto px-4">
           취소
         </Button>
-        <Button className="bg-bluegray-800 border-bluegray-800 px-3">
+        <Button className="bg-bluegray-800 border-bluegray-800 px-4">
           등록
         </Button>
       </Stack>
@@ -41,4 +41,4 @@ const SimpleForm = ({title, content}) => {
   );
 };
 
-export default SimpleForm;
+export default ArticleForm;
