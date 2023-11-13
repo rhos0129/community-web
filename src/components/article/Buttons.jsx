@@ -6,7 +6,7 @@ import { HiOutlineSortDescending } from 'react-icons/hi';
 const Buttons = () => {
     return (
         <div className='w-100 d-flex justify-content-between my-3'>
-            <Button className='bg-bluegray-800'>
+            <Button className='bg-bluegray-800' href='/article/new'>
                 <BsPencilSquare className='me-1' />
                 작성하기
             </Button>

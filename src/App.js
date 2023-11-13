@@ -22,7 +22,7 @@ const App = () => {
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/articles/:title' element={<ArticleList />} />
                 <Route path='/article/:no' element={<ArticleView />} />
-                <Route path='/article/wirte' element={<ArticleForm />} />
+                <Route path='/article/new' element={<ArticleForm />} />
                 <Route path='/article/:no/edit' element={<ArticleEdit />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
