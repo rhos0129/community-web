@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from 'components/layout/header/Header'
-import Footer from 'components/layout/footer/Footer'
-import DefaultContainer from 'components/layout/DefaultContainer'
+import React from "react";
+import Header from "components/layout/header/Header";
+import Footer from "components/layout/footer/Footer";
+import DefaultContainer from "components/layout/DefaultContainer";
 
-const BasicLayout = ({children}) => {
+const BasicLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <main id='main' role='main'>
-        <DefaultContainer>
+      <main id="main" role="main">
+        <DefaultContainer responsive>
           <div></div>
           {children}
           <div></div>
@@ -16,7 +16,7 @@ const BasicLayout = ({children}) => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default BasicLayout
+export default BasicLayout;
