@@ -1,12 +1,8 @@
-import BasicLayout from 'components/layout/BasicLayout'
-import React from 'react'
+import BasicLayout from "components/layout/BasicLayout";
+import React from "react";
 
 const Home = () => {
-  return (
-    <BasicLayout>
-      Home
-    </BasicLayout>
-  )
-}
+  return <BasicLayout>Home</BasicLayout>;
+};
 
-export default Home
+export default Home;

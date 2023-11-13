@@ -1,4 +1,5 @@
-$bluegrays : (bluegray-100: var(--bluegray-100),
+$bluegrays: (
+  bluegray-100: var(--bluegray-100),
   bluegray-200: var(--bluegray-200),
   bluegray-300: var(--bluegray-300),
   bluegray-400: var(--bluegray-400),
@@ -11,20 +12,18 @@ $bluegrays : (bluegray-100: var(--bluegray-100),
 );
 
 @each $name, $value in $bluegrays {
-
-  .bg-#{''+$name} {
+  .bg-#{"" + $name} {
     background-color: $value !important;
   }
 
-  .link-#{''+$name},
-  .text-#{''+$name} {
+  .link-#{"" + $name},
+  .text-#{"" + $name} {
     color: $value !important;
   }
 
-  .border-#{''+$name} {
+  .border-#{"" + $name} {
     border-color: $value !important;
   }
-
 }
 
 .fs-sm {
