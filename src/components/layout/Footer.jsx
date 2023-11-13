@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <footer id='footer' role='contentinfo'
-      className='bg-white border-top border-2 mb-4 pt-3'>
+      className='bg-white border-top border-2 mt-5 py-3'>
       <GridContainer>
         <Logo />
         <SimpleNav items={navItems} />
