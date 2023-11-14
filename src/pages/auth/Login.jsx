@@ -16,10 +16,20 @@ const Login = () => {
     },
   ];
 
+  const clickLoginButton = () => {
+    window.localStorage.setItem("isLogin", true);
+  };
+
+  const loginButton = {
+    text: "로그인",
+    href: "/",
+    onClick: clickLoginButton,
+  };
+
   return (
     <SimpleLayout>
       <AuthPageTitle />
-      <AuthForm items={formItems} buttonText="로그인" />
+      <AuthForm items={formItems} button={loginButton} />
       <SubLink text="아직 회원이 아니신가요?" to="회원가입" href="/signup" />
     </SimpleLayout>
   );

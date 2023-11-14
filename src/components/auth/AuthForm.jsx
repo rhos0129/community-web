@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 
-const AuthForm = ({ items, buttonText }) => {
+const AuthForm = ({ items, button }) => {
   return (
     <Form className="w-100">
       {items.map((item, key) => (
@@ -10,8 +10,12 @@ const AuthForm = ({ items, buttonText }) => {
           <Form.Control type={item.type} placeholder={item.placeholder} />
         </Form.Group>
       ))}
-      <Button className="w-100 my-3 bg-bluegray-800 border-bluegray-800">
-        {buttonText}
+      <Button
+        className="w-100 my-3 bg-bluegray-800 border-bluegray-800"
+        href={button.href}
+        onClick={button.onClick}
+      >
+        {button.text}
       </Button>
     </Form>
   );

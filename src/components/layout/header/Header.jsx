@@ -3,7 +3,7 @@ import Logo from "components/common/Logo";
 import DefaultContainer from "components/layout/DefaultContainer";
 import SimpleNav from "components/layout/header/SimpleNav";
 import SearchBox from "components/common/SearchBox";
-import ButtonGroup from "components/layout/header/ButtonGroup";
+import HeaderButtonGroup from "components/layout/header/HeaderButtonGroup";
 
 const Header = () => {
   const navItems = [
@@ -44,7 +44,7 @@ const Header = () => {
         <Logo />
         <SimpleNav items={navItems} />
         <SearchBox placeholder="전체 검색" width="40%" />
-        <ButtonGroup items={buttonGroupItems} rounded />
+        <HeaderButtonGroup items={buttonGroupItems} rounded />
       </DefaultContainer>
     </header>
   );

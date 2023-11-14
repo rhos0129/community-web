@@ -1,0 +1,7 @@
+.dropdown-item {
+  &:hover,
+  &:focus {
+    background-color: var(--bluegray-200);
+    color: white;
+  }
+}
