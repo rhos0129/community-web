@@ -22,14 +22,14 @@ const ArticleForm = ({ title, content }) => {
       <Form.Group className="mb-3">
         <Form.Label className="fs-sm">본문</Form.Label>
         <ReactQuill
-          className="w-100 "
+          className="w-100 article"
           theme="snow"
           modules={modules}
           placeholder="내용 입력"
           value={content}
         />
       </Form.Group>
-      <Stack direction="horizontal" className="" gap={1}>
+      <Stack direction="horizontal" gap={1}>
         <Button className="bg-white text-bluegray-800 border-bluegray-800 ms-auto px-4">
           취소
         </Button>

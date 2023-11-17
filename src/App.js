@@ -5,7 +5,7 @@ import Home from "pages/Home";
 import SignUp from "pages/auth/SignUp";
 import Login from "pages/auth/Login";
 import Profile from "pages/mypage/Profile";
-import ArticleView from "pages/article/ArticleView";
+import ArticleDetail from "pages/article/ArticleDetail";
 import ArticleEdit from "pages/article/ArticleEdit";
 import NotFound from "pages/NotFound";
 import ArticleRegist from "pages/article/ArticleRegist";
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/:category" element={<ArticleSearch />} />
-        <Route path="/article/:no" element={<ArticleView />} />
+        <Route path="/article/:no" element={<ArticleDetail />} />
         <Route path="/article/new" element={<ArticleRegist />} />
         <Route path="/article/:no/edit" element={<ArticleEdit />} />
         <Route path="*" element={<NotFound />} />

@@ -1,8 +1,20 @@
 .ql-editor {
-  min-height: 300px;
   font-size: 1rem;
 
   &.ql-blank::before {
     font-style: normal;
+  }
+}
+
+.quill {
+  &.article {
+    .ql-editor {
+      min-height: 300px;
+    }
+  }
+  &.comment {
+    .ql-editor {
+      min-height: 80px;
+    }
   }
 }
