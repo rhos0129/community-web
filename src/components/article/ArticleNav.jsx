@@ -21,7 +21,7 @@ const ArticleNav = () => {
           </span>
         }
       >
-        <Dropdown.Item className="bg-bluegray-300" eventKey="1" active>
+        <Dropdown.Item eventKey="1" active>
           최신순
         </Dropdown.Item>
         <Dropdown.Item eventKey="2">댓글순</Dropdown.Item>

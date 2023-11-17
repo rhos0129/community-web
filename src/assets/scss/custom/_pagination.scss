@@ -1,0 +1,30 @@
+.page-item {
+  .page-link {
+    font-size: 0.875rem;
+    background: white !important;
+    color: var(--bluegray-900);
+    border-radius: 0% !important;
+    border: none;
+    border-top: 2px solid #00ff0000 !important;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  &.disabled {
+    .page-link {
+      color: var(--bluegray-200);
+    }
+  }
+
+  &.active {
+    .page-link {
+      border-top: 2px solid var(--blue) !important;
+      color: var(--blue);
+    }
+  }
+}

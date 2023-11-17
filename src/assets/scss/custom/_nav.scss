@@ -1,0 +1,7 @@
+.nav-link {
+  color: inherit;
+  &:hover,
+  &:active {
+    color: var(--blue);
+  }
+}

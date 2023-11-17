@@ -1,0 +1,14 @@
+.dropdown-toggle {
+  &::after {
+    content: none;
+  }
+}
+
+.dropdown-item {
+  &.active,
+  &:hover,
+  &:focus {
+    background-color: var(--bluegray-300);
+    color: white;
+  }
+}

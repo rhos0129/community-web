@@ -2,13 +2,11 @@
 
 @import "setting/vars";
 @import "setting/reset";
-@import "setting/common";
 
-@import "components/layout/simpleNav";
-@import "components/layout/headerButtonGroup";
-
-@import "components/article/customPagination";
-@import "components/article/articleNav";
-@import "components/article/articleForm";
-
-@import "components/mypage/profileWithdraw";
+@import "custom/color";
+@import "custom/font";
+@import "custom/dropdown";
+@import "custom/input";
+@import "custom/nav";
+@import "custom/pagination";
+@import "custom/qlEditor";
